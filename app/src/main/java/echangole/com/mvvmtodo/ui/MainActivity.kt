@@ -1,7 +1,8 @@
-package echangole.com.mvvmtodo
+package echangole.com.mvvmtodo.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import echangole.com.mvvmtodo.R
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
