@@ -4,7 +4,6 @@
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".ui.tasks.TasksFragment"
-    android:background="@color/purple_200"
     >
 
     <androidx.recyclerview.widget.RecyclerView
