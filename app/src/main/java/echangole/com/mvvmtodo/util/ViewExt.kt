@@ -2,7 +2,7 @@ package echangole.com.mvvmtodo.util
 
 import androidx.appcompat.widget.SearchView
 
-inline fun SearchView.OnQueryTextChanged(crossinline listener:(String)-> Unit)
+inline fun SearchView.onQueryTextChanged(crossinline listener:(String)-> Unit)
 {
     this.setOnQueryTextListener(object: SearchView.OnQueryTextListener
     {
@@ -14,7 +14,8 @@ inline fun SearchView.OnQueryTextChanged(crossinline listener:(String)-> Unit)
         override fun onQueryTextChange(newText: String?): Boolean
         {
 
-            TODO("Not yet implemented")
+         listener(newText.orEmpty())
+            return true;
         }
     })
 
